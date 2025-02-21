@@ -1,0 +1,103 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary-color: #000501;
+    --secondary-color: #004E89;
+    --thir-color: #2DD881;
+    --fourth-color: #FFD23F;
+    --fifth-color: #FFFBFE;
+    --font-size: 16px;
+    --padding: 10px;
+  }
+  
+  /* Mejora la tipografía */
+  html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hace que los enlaces no tengan subrayado por defecto */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Evita estilos raros en listas */
+  ul, ol {
+    list-style: none;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imágenes y elementos multimedia responsivos */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Mejora la accesibilidad en botones */
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  /* Evita el comportamiento extraño en inputs y textarea */
+  input, textarea {
+    border: none;
+    outline: none;
+    font: inherit;
+  }
+  input{
+    text-align: center;
+    border-radius: 20%;
+    padding: 10px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+  }
+.caja{
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2015522526. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    background-color: var(--primary-color);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}  
+.form{
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:954407311. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:var(--secondary-color);
+    
+
+}
+h1{
+    font-size: larger;
+    color: var(--fifth-color);
+    padding: 20px;
+}
+.buttom{
+    color: var(--fifth-color);
+    background-color: var(--thir-color);
+    border-radius: 20%;
+    padding: 10px;
+    margin-top: 10px ;
+}

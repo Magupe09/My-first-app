@@ -59,17 +59,17 @@ function App() {
   };
   
   return (
-    <div>
-       <h1>My first React App</h1>
-       <form onSubmit={handleSubmit}>
+    <div className="caja">
+       <h1>My POMODORO App</h1>
+       <form onSubmit={handleSubmit} className="form">
         <input  type="text" onChange={handleInputChange} placeholder="Agregue la tarea" value={nuevaTarea}/>
-        <button type="submit" >Agregar Tarea</button>
+        <button type="submit" className="buttom" >Agregar Tarea</button>
         <ol>
           {tareas.map((tarea, index) => (
             <li key={index}
             style={{ textDecoration: tarea.completada ? "line-through" : "none" }}
             >{tarea.texto}
-            <button onClick={() => marcarComoHecha(index)}>
+            <button   onClick={() => marcarComoHecha(index)}>
               {tarea.completada ? "❌" : "✅"}
             </button>
             <button onClick={() => eliminarTarea(index)}>❌</button>
@@ -78,7 +78,7 @@ function App() {
           
         </ol>
        </form>
-       <button onClick={eliminarTodasLasTareas}>Eliminar Todas las Tareas</button>
+       <button className="buttom" onClick={eliminarTodasLasTareas}>Eliminar Todas las Tareas</button>
     
     </div>
   )
